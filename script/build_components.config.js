@@ -7,9 +7,9 @@ module.exports = components.map(component => ({
   output: {
     path: path.resolve(__dirname, '../public/components'),
     filename: `${component}.[contenthash:6].js`, // 输出文件名
-    // 暴露为全局变量（如 window.EASY_COMPONENTS.Header）
+    // 暴露为全局变量（window.EASY_COMPONENTS.Header）
     library: {
-      name: `EASY_COMPONENTS.${component}`, // 全局变量名
+      name: [`EASY_COMPONENTS_${component}`], // 全局变量名
       type: 'umd', // 支持多种模块化方案
     },
     libraryTarget: 'umd',
