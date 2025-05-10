@@ -1,0 +1,33 @@
+{
+  "name": "easy-work",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build_comp": "webpack --config script/build_components.config.js"
+  },
+  "dependencies": {
+    "next": "15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/eslintrc": "^3",
+    "babel-loader": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
